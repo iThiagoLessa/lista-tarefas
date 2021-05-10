@@ -7,6 +7,10 @@ $src        : "../fonts/RobotoMono-Thin.ttf";
     font-weight: 600;
 }
 
+button {
+    outline: none !important;
+}
+
 body {
     display        : flex;
     justify-content: $centraliza;
@@ -24,5 +28,52 @@ body {
 
     h1 {
         text-align: left;
+    }
+}
+
+.header-application {
+    display      : flex;
+    border-bottom: 1px solid #e4e4e4;
+    align-items  : baseline;
+
+    p {
+        margin   : 0;
+        font-size: 2em;
+        padding  : 0 10px 5px 0;
+    }
+
+    small {
+        color    : gray;
+        font-size: .9em;
+    }
+}
+
+.actions-aplication {
+    margin-top: 30px;
+    display   : flex;
+
+    input {
+        width       : 100%;
+        padding     : 5px;
+        margin-right: 5px;
+        border      : 1px solid #D8D8D8;
+
+        &:focus {
+            outline: 1x solid blue !important;
+            border : 1px solid blue !important;
+        }
+    }
+
+    button {
+        border       : 0;
+        padding      : 10px 15px 10px 15px;
+        border-radius: 4px;
+        cursor       : pointer;
+
+        &:hover {
+            background-color: #f88787;
+            transition      : .1s ease-in;
+            color: white;
+        }
     }
 }
